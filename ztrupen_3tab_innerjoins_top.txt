@@ -1,0 +1,27 @@
+*&---------------------------------------------------------------------*
+*&  Include   ZTRUPEN_3TAB_INNERJOINS_TOP
+*&---------------------------------------------------------------------*
+
+TYPES:BEGIN OF ty_tab, " LOCAL STRS
+  matnr TYPE matnr, " Material Number
+  mbrsh TYPE mbrsh, "  Industry sector
+  mtart TYPE mtart,
+  meins TYPE meins,
+  brgew TYPE brgew,
+  ntgew TYPE ntgew,
+*---------------------MARC
+  WERKS TYPE WERKS_D,
+  PSTAT TYPE PSTAT_D,
+  LVORM TYPE LVOWK,
+*------------------------ MAKT
+  SPRAS TYPE SPRAS,
+  MAKTX TYPE MAKTX,
+  MAKTG TYPE MAKTG,
+
+END OF ty_tab.
+
+DATA : it_tab TYPE STANDARD TABLE OF ty_tab,  " INTERNAL TABLE
+      wa_tab TYPE ty_tab. " WORK AREA
+
+
+DATA lv_matnr TYPE matnr.
