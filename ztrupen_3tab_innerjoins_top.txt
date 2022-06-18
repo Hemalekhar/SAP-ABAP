@@ -1,5 +1,5 @@
 *&---------------------------------------------------------------------*
-*&  Include   ZTRUPEN_3TAB_INNERJOINS_TOP
+*&  Include   ZHL_3TAB_INNERJOINS_TOP
 *&---------------------------------------------------------------------*
 
 TYPES:BEGIN OF ty_tab, " LOCAL STRS
